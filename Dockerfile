@@ -2,10 +2,10 @@ FROM golang:latest AS builder
 
 WORKDIR /app
 
-COPY sub/go.mod sub/go.sum ./
+COPY /go.mod /go.sum ./
 RUN go mod download
 
-COPY sub/ ./
+COPY / ./
 
 RUN CGO_ENABLED=0 GOOS=linux go build -o sub-server .
 

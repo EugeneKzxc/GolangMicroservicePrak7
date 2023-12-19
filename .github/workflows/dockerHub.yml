@@ -24,4 +24,4 @@ jobs:
       uses: docker/build-push-action@v2
       with:
         push: true
-        tags: eugenekzxc/GolangMicroservicePrak7:latest
+        tags: eugenekzxc/golangmicroserviceprak7:latest
